@@ -9,9 +9,19 @@ class Home extends BaseController
     {
         $konf_arp               = new Model_arsip();
         $arsip                  = $konf_arp->listening();
+        $jumlah_surat_total     = $konf_arp->jumlah_surat();
+        $jumlah_surat_undangan     = $konf_arp->jumlah_surat_undangan();
+        $jumlah_surat_pengumuman     = $konf_arp->jumlah_surat_pengumuman();
+        $jumlah_surat_notadinas     = $konf_arp->jumlah_surat_notadinas();
+        $jumlah_surat_pemberitahuan     = $konf_arp->jumlah_surat_pemberitahuan();
 
         $data = [
-            'database'  => $arsip
+            'database'  => $arsip,
+            'jumlah_surat_total' => $jumlah_surat_total,
+            'jumlah_surat_undangan' => $jumlah_surat_undangan,
+            'jumlah_surat_pengumuman' => $jumlah_surat_pengumuman,
+            'jumlah_surat_notadinas' => $jumlah_surat_notadinas,
+            'jumlah_surat_pemberitahuan' => $jumlah_surat_pemberitahuan,
         ];
 
         return view('index', $data);

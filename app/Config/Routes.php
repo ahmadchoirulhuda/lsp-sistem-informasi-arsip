@@ -39,6 +39,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/lihat', 'Home::lihat'); 
 $routes->get('/hapus', 'Home::hapus'); 
 $routes->post('/cari', 'Home::cari'); 
+$routes->post('/download', 'Home::download'); 
 $routes->get('/arsip-surat', 'Tambah::index');
 $routes->get('/edit-arsip', 'Tambah::edit');
 $routes->post('/editSimpan-arsip', 'Tambah::editSimpan');

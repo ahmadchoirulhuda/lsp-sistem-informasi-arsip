@@ -46,4 +46,38 @@ class Model_arsip extends Model
             ->where('id', $data['id'])
             ->update($data);
     }
+
+    public function jumlah_surat(){
+        return $this->db->table('arsip')
+        ->select('COUNT(*) AS jumlah')
+        ->get()->getResultArray();
+    }
+
+    public function jumlah_surat_undangan(){
+        return $this->db->table('arsip')
+        ->select('COUNT(*) AS jumlah')
+        ->where('kategori', 'undangan')
+        ->get()->getResultArray();
+    }
+
+    public function jumlah_surat_pengumuman(){
+        return $this->db->table('arsip')
+        ->select('COUNT(*) AS jumlah')
+        ->where('kategori', 'pengumuman')
+        ->get()->getResultArray();
+    }
+
+    public function jumlah_surat_notadinas(){
+        return $this->db->table('arsip')
+        ->select('COUNT(*) AS jumlah')
+        ->where('kategori', 'nota dinas')
+        ->get()->getResultArray();
+    }
+
+    public function jumlah_surat_pemberitahuan(){
+        return $this->db->table('arsip')
+        ->select('COUNT(*) AS jumlah')
+        ->where('kategori', 'pemberitahuan')
+        ->get()->getResultArray();
+    }
 }

@@ -73,6 +73,80 @@
               </div><!-- /.row -->
             </div><!-- /.container-fluid -->
         </div>
+        <div class="row mb-2">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3><?= $jumlah_surat_undangan[0]['jumlah'] ?></h3>
+
+                <p>Undangan</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3><?= $jumlah_surat_pengumuman[0]['jumlah'] ?></h3>
+
+                <p>Pengumuman</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3><?= $jumlah_surat_notadinas[0]['jumlah'] ?></h3>
+
+                <p>Nota Dinas</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3><?= $jumlah_surat_pemberitahuan[0]['jumlah'] ?></h3>
+
+                <p>Pemberitahuan</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3><?= $jumlah_surat_total[0]['jumlah'] ?></h3>
+
+                <p>Total</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <hr>
         <div class="content">
             <div class="container-fluid">
               <div class="row mb-4">
